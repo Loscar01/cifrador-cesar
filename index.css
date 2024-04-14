@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    font-family: 'Cabin';
+}
+
+/* Estilo general */
+
+body{
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+  
+  h1, h2, h3 {
+    margin: 0 0 20px;
+  }
+  
+  p {
+    margin: 0 0 15px;
+  }
+  
+  /* Información */
+  .info {
+    padding: 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    background-color: rgba(255, 255, 255, 0.234);
+    box-shadow: 10px 1px 50px 1px rgba(0, 0, 0, 0.611);
+    border-radius: 15px;
+    width: 95%;
+    margin:auto;
+  }
+  .info h3{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Cifrador/Descifrador */
+  .container {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5em);
+    margin: auto;
+    margin-top: 1em;
+    border-radius: 15px;
+    width: 97%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.234);
+    box-shadow: 10px 1px 50px 1px rgba(0, 0, 0, 0.611);
+  }
+  
+  .cifrador, .descifrador {
+    background-color: #ffffff7b;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 80%;
+    height: auto;
+    margin: 1em;
+    border: 5px solid rgb(53, 48, 48);
+    border-radius: 15px;
+    font-size: 30px;
+    box-shadow: 10px 1px 50px 1px rgba(255, 255, 255, 0.241);
+
+  }
+  
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+    margin: 20px ;
+}
+
+/* Estilos para el riel del input range */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 22px;
+    cursor: pointer;
+    background: #000000;
+    border-radius: 10px;
+    border: 0;
+}
+
+/* Estilos para el control deslizante del input range */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: #ffffff;
+    border-radius: 100%;
+    border: 3px solid #bb393964;
+}
+
+/* Estilos adicionales para el control deslizante en el foco */
+input[type="range"]:focus {
+    opacity: 1;
+    outline: none;
+}
+ 
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 30px;
+    margin-bottom: 10px;
+    border: 2px solid #402828;
+    border-radius: 5px;
+    font-size: 25px;
+  }
+  input[type="text"]::placeholder{
+    font-size: 30px;
+    
+  }
+  input[type="range"]{
+    width: 50%;
+  }
+  
+  output {
+    margin: 15px;
+   
+  }
+  
+  .resultado {
+    word-wrap: break-word;
+    margin: 1em;
+    border: 1px solid black;
+    width: 95%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrador César</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+ <div class="info">
+    <h3>Que es el cifrado César?</h3>
+    <p>El metodo de cifrado césar es uno de los tantos metodos para cifrar mensajes, lleva el nombre del emperador romano Julio César, quien se dice que lo utilizó para protejer la confidecialidad de sus comunicaciones militares.</p>
+    <h3>Entendiendo su funcionamiento</h3>
+    <p>La tecnica consiste en una sustitucion alfabética,en la que cada letra del texto es reemplazada por otra letra que se encuentra en un numero fijo de posiciones mas adelante en el alfabeto. </p><br>
+    <p>¡Es como mover las letras del alfabeto hacia adelante o hacia atras en una cierta cantidad de lugares!</p>
+    <p>Puedes usar nuestro cifrador cesar para comprobar lo que te estamos diciendo:</p>
+    <span style="text-decoration:underline;">* Si el resultado no es el esperado, juega con los valores del rango.</span>
+ </div>
+    <div class="container">
+        <div class="cifrador">
+            <h1>Cifrador César</h1>
+            <form id="cifrado-form" autocomplete="off">
+                <input type="text" id="input-original" spellcheck="false" placeholder="Ingrese un texto" name="text">
+                <div class="range-container">
+                    <input type="range" id="rango" value="1" min="1" max="10">
+                </div>
+                <output id="nivel">1</output>
+            </form>
+            <p>Resultado:</p>
+            <div id="resultado" class="resultado"></div>
+        </div>
+        
+        <div class="descifrador">
+            <h1>Descifrador</h1>
+            <form id="descifrado-form" autocomplete="off">
+                <input type="text" id="input-cifrado" spellcheck="false" placeholder="Ingrese un texto cifrado" name="text">
+                <div class="range-container">
+                    <input type="range" id="rango-descifrado" value="1" min="1" max="10">
+                    <output id="nivel-descifrado">1</output>
+                </div>
+            </form>
+            <div id="resultado-descifrado" class="resultado"></div>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
