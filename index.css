@@ -147,3 +147,10 @@ input[type="range"]:focus {
     padding: 10px;
   }
   
+#id{
+  align-items: end;
+  text-align: end;
+  justify-content: end;
+  color:#ffffff;
+  margin-top: 10em;
+}
